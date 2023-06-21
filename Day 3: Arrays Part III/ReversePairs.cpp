@@ -27,17 +27,6 @@ void merge(vector<int> &arr, int n, int low, int mid, int high){
 	int left=low, right=mid+1;
     vector<int> temp;
 
-    //  cout<<"Count pairs low "<<endl;
-    // for(int i=low; i<=mid; i++){
-    //     cout<<arr[i]<<" ";
-    // }cout<<endl;
-    // cout<<"Count pairs high "<<endl;
-    // for(int i=mid+1; i<=high; i++){
-    //     cout<<arr[i]<<" ";
-    // }cout<<endl;
-    // cout<<endl;
-
-
     while(left<=mid && right<=high){
         if(arr[left] <= arr[right]){
             temp.push_back(arr[left++]);
