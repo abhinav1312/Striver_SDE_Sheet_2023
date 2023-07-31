@@ -45,7 +45,6 @@ void solve(TreeNode<int>* &root, vector<int>& postOrder, vector<int>& inOrder, i
 
 TreeNode<int>* getTreeFromPostorderAndInorder(vector<int>& postOrder, vector<int>& inOrder) 
 {
-	// Write your code here.
     TreeNode<int>* root = NULL;
     map<int, int> m;
     createMapping(m, inOrder);
